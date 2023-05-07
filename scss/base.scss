@@ -1,0 +1,461 @@
+body {
+  font-family: $fontMain;
+  color: $colorBlack;
+  background-color: #d6d6d6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+label,
+textarea,
+input {
+  font-family: $fontMain;
+}
+
+.siteWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+  // overflow: hidden;
+
+  .footer {
+    margin-top: auto;
+  }
+}
+
+.logo-wrapper {
+  position: relative;
+  @include invisLink;
+  @include transition(all 0.3s);
+  & > a {
+    z-index: auto;
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+.text-simple {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 35px;
+  color: #292929;
+
+  p {
+    & + p {
+      margin-top: 33px;
+    }
+  }
+}
+
+.menu-burger {
+  width: 27px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.open {
+  }
+
+  .line {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $colorWhite;
+    @include transition(all 0.3s);
+
+    & + .line {
+      margin-top: 2px;
+    }
+  }
+}
+
+.swiper-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 147px;
+
+  %swiper-button {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: block;
+    @include border-radius(50%);
+    background-color: rgba(169, 161, 156, 0.8);
+    @include transition(all 0.3s);
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background-color: rgba(169, 161, 156, 1);
+    }
+
+    svg {
+      position: relative;
+      @include transition(all 0.3s);
+    }
+  }
+
+  .swiper-button-prev {
+    @extend %swiper-button;
+
+    svg {
+      left: -29px;
+    }
+  }
+  .swiper-button-next {
+    @extend %swiper-button;
+
+    svg {
+      right: -23px;
+    }
+  }
+}
+
+//////////////////////////
+
+.input-list {
+  .input-item {
+    & + .input-item {
+    }
+  }
+}
+
+.input-item {
+  position: relative;
+
+  %stylesInput {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 55px;
+    color: $colorBlack;
+    border: 1px solid $colorBlack;
+    @include border-radius(5px);
+    padding: 0 50px 0 35px;
+    width: 100%;
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  textarea {
+    @extend %stylesInput;
+    height: 100%;
+  }
+  input {
+    @extend %stylesInput;
+    height: 59px;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 17px;
+    right: 21px;
+    font-size: 24px;
+    color: $colorBlack;
+  }
+}
+
+.selectric {
+  background: transparent;
+  background-color: $colorWhite;
+  border: 1px solid $colorBlack;
+  height: 51px;
+  width: 100%;
+  @include border-radius(5px);
+
+  .label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 51px;
+    color: $colorBlack;
+    padding: 0 51px 0 21px;
+    margin: 0;
+    height: 100%;
+  }
+
+  .button {
+    width: 48px;
+    height: 100%;
+    background: transparent;
+    display: flex;
+
+    @include beforeIcMoon {
+      content: "\e002";
+      font-size: 10px;
+      color: $colorBlack;
+      margin: auto;
+      position: relative;
+      top: 0;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.selectric-wrapper {
+  border: 0;
+
+  &.selectric-open {
+    .selectric {
+      .button {
+        @include transform(scale(1, -1));
+      }
+    }
+  }
+
+  &.selectric-above {
+    .selectric-items {
+      margin-top: 0px;
+      margin-bottom: -5px;
+    }
+
+    .selectric-scroll ul {
+      padding-top: 0;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.selectric-items {
+  background: transparent;
+  background-color: $colorWhite;
+  border: 1px solid $colorBlack;
+  overflow: hidden;
+  @include border-radius(0);
+  @include box-shadow(none);
+  margin-top: -5px;
+  z-index: -1;
+}
+
+.selectric-scroll {
+  border: 0;
+  ul {
+    padding-top: 5px;
+
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: #7b7b7b;
+      padding: 9px 16px;
+      @include transition(all 0.3s);
+
+      &.highlighted,
+      &.selected {
+        background: transparent !important;
+        text-decoration: underline;
+        color: $colorBlack;
+      }
+      &:hover {
+        background: transparent !important;
+        color: $colorBlack;
+      }
+    }
+  }
+}
+
+.checkBlock {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+
+  input {
+    display: none;
+
+    &:checked {
+      & + label {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+    padding-left: 38px;
+    position: relative;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: $colorBlack;
+    display: block;
+    text-align: left;
+
+    @include before {
+      left: 0;
+      top: 50%;
+      width: 25px;
+      height: 25px;
+      margin-top: -12.5px;
+      border: solid 1px $colorBlack;
+      @include border-radius(50%);
+    }
+
+    @include after {
+      left: 5px;
+      top: 50%;
+      width: 15px;
+      height: 15px;
+      margin-top: -7.5px;
+      background-color: $colorBlack;
+      @include border-radius(50%);
+      opacity: 0;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+
+  .swiper-pagination-bullet {
+    position: relative;
+    width: 20px;
+    height: 8px;
+    background-color: #e4e4e4;
+    border: 0;
+    margin: 0 8px;
+    @include border-radius(10px);
+    @include transition(all 0.3s);
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active {
+      background-color: $colorBlack;
+      width: 31px;
+    }
+
+    &:hover {
+      background-color: $colorBlack;
+    }
+  }
+}
+
+// modals base
+
+.modal {
+  font-family: $fontMain;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal.is-open {
+  display: block;
+  z-index: 15;
+  position: fixed;
+}
+
+.modal__container {
+  overflow: auto;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 50px 0;
+}
+
+.modal__content {
+  padding: 0;
+  margin: 0;
+
+  .link {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    @include transition(all 0.3s);
+    color: #4c535b;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+.modal__close {
+  width: 46px;
+  height: 46px;
+  padding: 18px;
+  background-color: $colorBlack;
+  @include border-radius(50%);
+  position: absolute;
+  right: 27px;
+  top: 32px;
+  display: block;
+  @include transition(all 0.3s);
+  z-index: 10;
+
+  span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $colorWhite;
+    @include transform(rotate(45deg));
+    &:nth-child(2) {
+      @include transform(rotate(-45deg));
+      top: -2px;
+    }
+  }
+  &:hover {
+    background-color: $colorBlack;
+  }
+}
+
+.modal__content {
+  .scroll {
+    &::-webkit-scrollbar {
+      width: 5px;
+      @include border-radius(10px);
+      margin-right: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #d9d9d9;
+      @include border-radius(10px);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $colorBlack;
+      @include border-radius(10px);
+    }
+  }
+}
+
+// хак для хрома (modal hidden body)
+
+@media (min-width: 1200px) {
+  _:-webkit-any-link,
+  :root .modal-open {
+    padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.btn {
+  @include transition(all 0.3s);
+
+  &.btnWhite {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorWhite;
+    border: 0.5px solid $colorWhite;
+    @include border-radius(30px);
+    padding: 12px 12px;
+
+    &:hover {
+      background-color: $colorWhite;
+      color: $colorBlack;
+    }
+  }
+}

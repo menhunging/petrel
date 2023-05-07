@@ -1,0 +1,132 @@
+.header {
+  background-color: #292929;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  &__leftSide {
+    width: calc(50% - 90px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 12px;
+  }
+
+  &__rightSide {
+    width: calc(50% - 90px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .logo-wrapper {
+    left: 27px;
+  }
+
+  .btn {
+    min-width: 203px;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    @include transition(text-decoration 0.3s);
+
+    &:hover {
+      text-decoration-color: $colorWhite;
+    }
+  }
+}
+
+.menu {
+  margin-left: 81px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  flex: 1;
+  color: $colorWhite;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  li {
+    position: relative;
+
+    &.sub {
+      @include before {
+        position: absolute;
+        right: -25px;
+        top: 50%;
+        background-image: url("../img/checkmark.svg");
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 10px;
+        margin-top: -5px;
+      }
+    }
+
+    &:hover {
+      .sub-menu {
+        display: block;
+      }
+    }
+  }
+
+  .sub-menu {
+    position: absolute;
+    left: -9px;
+    top: 100%;
+    background-color: #292929;
+    display: none;
+    width: 150px;
+    padding: 10px;
+    padding-top: 15px;
+
+    li {
+      & + li {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.adress-block {
+  color: $colorWhite;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $colorWhite;
+
+  svg {
+    fill: $colorWhite;
+  }
+}
+
+.phone-block {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $colorWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 31px 0 74px;
+}
