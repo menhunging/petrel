@@ -1,18 +1,42 @@
 .btn {
+  position: relative;
   @include transition(all 0.3s);
+  @include border-radius(30px);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: $colorWhite;
+  border: 0.5px solid transparent;
 
   &.btnWhite {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: $colorWhite;
-    border: 0.5px solid $colorWhite;
-    @include border-radius(30px);
+    border-color: $colorWhite;
     padding: 12px 12px;
 
     &:hover {
       background-color: $colorWhite;
       color: $colorBlack;
     }
+  }
+
+  &.btnBlue {
+    border-color: #001136;
+    background-color: #001136;
+    padding: 17px 90px 17px 28px;
+    text-align: left;
+
+    &:hover {
+      background-color: #12295b;
+    }
+
+    svg {
+      fill: $colorWhite;
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -15px;
   }
 }

@@ -26,6 +26,7 @@ $(document).ready(function () {
     const swiper = new Swiper(".concept .swiper", {
       slidesPerView: 1,
       slidesPerGroup: 1,
+      autoHeight: true,
       speed: 600,
       loop: false,
       navigation: {
@@ -33,6 +34,64 @@ $(document).ready(function () {
         prevEl: ".concept .swiper-button-prev",
       },
     });
+  }
+
+  if ($(".restaurant-menu").length > 0) {
+    const swiper = new Swiper(".restaurant-menu .swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      // navigation: {
+      //   nextEl: ".restaurant-menu .swiper-button-next",
+      //   prevEl: ".restaurant-menu .swiper-button-prev",
+      // },
+    });
+  }
+
+  if ($(".restaurant-location").length > 0) {
+    const swiper = new Swiper(".restaurant-location .swiper", {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      autoHeight: true,
+      speed: 600,
+      loop: false,
+      navigation: {
+        nextEl: ".concept .swiper-button-next",
+        prevEl: ".concept .swiper-button-prev",
+      },
+    });
+  }
+
+  if ($(".phoneInput").length > 0) {
+    $(".phoneInput").map(function () {
+      $(this).inputmask({
+        mask: "+7(999) 999-99-99",
+        placeholder: "*",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+        clearIncomplete: true,
+      });
+    });
+  }
+
+  if ($(".counter").length) {
+    let minus = $(".counter__minus");
+    let plus = $(".counter__plus");
+    let text = $(".counter__text");
+
+    minus.on("click", () => {
+      let count = Number(text.text());
+      text.text(count == 0 ? 0 : count - 1);
+    });
+
+    plus.on("click", () => {
+      let count = Number(text.text());
+      text.text(count + 1);
+    });
+  }
+
+  if ($("#datepicker").length > 0) {
+    $.datepicker.setDefaults($.datepicker.regional["ru"]);
+    $("#datepicker").datepicker();
   }
 
   ///////////////////////////////////////
@@ -124,18 +183,6 @@ $(document).ready(function () {
 
     $("a[data-custom-open]").map(function () {
       $(this).click((e) => e.preventDefault());
-    });
-  }
-
-  if ($(".phoneInput").length > 0) {
-    $(".phoneInput").map(function () {
-      $(this).inputmask({
-        mask: "+7(999) 999-99-99",
-        placeholder: "*",
-        showMaskOnHover: false,
-        showMaskOnFocus: true,
-        clearIncomplete: true,
-      });
     });
   }
 

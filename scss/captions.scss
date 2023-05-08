@@ -3,6 +3,15 @@
   font-family: $fontKaisel;
   color: #292929;
   text-transform: uppercase;
+
+  &__desc {
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #292929;
+    display: block;
+  }
 }
 
 h1 {
