@@ -2,6 +2,10 @@ body {
   font-family: $fontMain;
   color: $colorBlack;
   background-color: #f4f1ef;
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -62,8 +66,20 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
+  @include transition(all 0.3s);
+  white-space: nowrap;
 
   &.open {
+    .line {
+      opacity: 0;
+    }
+
+    .menu-burger__close {
+      display: flex;
+      opacity: 1;
+      pointer-events: inherit;
+    }
   }
 
   .line {
@@ -72,11 +88,24 @@ input {
     width: 100%;
     height: 1px;
     background-color: $colorWhite;
-    @include transition(all 0.3s);
 
     & + .line {
       margin-top: 2px;
     }
+  }
+
+  &__close {
+    display: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorWhite;
+    @include transition(all 0.3s);
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    width: 95px;
   }
 }
 
@@ -786,11 +815,39 @@ input {
   z-index: 999 !important;
 }
 
+// style scroll in blocks
+
+div {
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+    left: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgba(255, 255, 255, 0.33);
+    @include border-radius(10px);
+  }
+
+  scrollbar-color: rgba(255, 255, 255, 0.33) transparent;
+  scrollbar-width: thin;
+}
+
 // хак для хрома (modal hidden body)
 
 @media (min-width: 1200px) {
   _:-webkit-any-link,
   :root .modal-open {
+    padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
+  }
+
+  _:-webkit-any-link,
+  :root .hidden {
     padding-right: 17px;
 
     .header {
