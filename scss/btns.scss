@@ -19,6 +19,17 @@
     }
   }
 
+  &.btnBlack {
+    border-color: #292929;
+    color: #292929;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #292929;
+      color: $colorWhite;
+    }
+  }
+
   &.btnBlue {
     border-color: #001136;
     background-color: #001136;

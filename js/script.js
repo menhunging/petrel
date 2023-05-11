@@ -144,6 +144,21 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".tabs").length > 0) {
+    $(".tabs").tabslet({
+      mouseevent: "click",
+      attribute: "href",
+      animation: true,
+    });
+  }
+
+  if ($(".linkFancyBox").length > 0) {
+    Fancybox.bind("[data-fancybox]", {
+      speedIn: 600,
+      speedOut: 600,
+    });
+  }
+
   ///////////////////////////////////////
 
   if ($(".complect-tabs").length) {
@@ -154,14 +169,6 @@ $(document).ready(function () {
 
     $(".complect-tabs").on("_before", function (e) {
       $(e.target).find("input").prop("checked", true);
-    });
-  }
-
-  if ($(".tabs").length > 0) {
-    $(".tabs").tabslet({
-      mouseevent: "click",
-      attribute: "href",
-      animation: true,
     });
   }
 
@@ -196,13 +203,6 @@ $(document).ready(function () {
           slidesPerView: 1,
         },
       },
-    });
-  }
-
-  if ($(".linkFancyBox").length > 0) {
-    Fancybox.bind("[data-fancybox]", {
-      speedIn: 600,
-      speedOut: 600,
     });
   }
 

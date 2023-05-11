@@ -27,10 +27,15 @@ input {
   flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
-  // overflow: hidden;
 
   .footer {
     margin-top: auto;
+  }
+
+  &.innerPage {
+    .main {
+      padding-top: 125px;
+    }
   }
 }
 
@@ -601,6 +606,78 @@ input {
   }
 }
 
+.tabs-wrapper {
+  padding: 23px 0;
+}
+
+.tabs {
+  .caption {
+    left: -15px;
+  }
+
+  .caption__desc {
+    margin-top: 20px;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 168px;
+    border-bottom: 1px solid #cbc1bc;
+    margin-top: 25px;
+    padding-bottom: 9px;
+
+    li {
+      &.active {
+        .tabs__link {
+          &::before {
+            width: 24px;
+            margin-left: -12px;
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #80726a;
+    position: relative;
+
+    @include before {
+      width: 0px;
+      height: 2px;
+      bottom: -28px;
+      left: 50%;
+      background-color: #001136;
+      margin-left: 0;
+    }
+  }
+
+  &__body {
+    margin-top: 41px;
+  }
+
+  .gallery {
+    left: -175px;
+    width: calc(100% + 175px + 175px);
+    gap: 4px;
+  }
+
+  .gallery__item {
+    width: calc(100% / 3 - 3px);
+
+    &:hover {
+      .lupa {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 // modals base
 
 .modal {
@@ -707,7 +784,7 @@ input {
   }
 }
 
-#modalCall {
+#modal-call {
   .modal__inner {
     max-width: 590px;
     padding: 90px 90px;
