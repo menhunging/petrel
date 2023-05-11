@@ -93,7 +93,6 @@
   .caption {
     grid-column: 1/2;
     grid-row: 2/3;
-    font-weight: 700;
     font-size: 100px;
     line-height: 115px;
     color: $colorWhite;
@@ -185,11 +184,6 @@
     }
 
     .caption {
-      font-weight: 700;
-      font-size: 75px;
-      line-height: 60px;
-      text-transform: uppercase;
-      color: #292929;
       left: -12px;
     }
 
@@ -279,9 +273,6 @@
     }
 
     .caption {
-      font-weight: 700;
-      font-size: 75px;
-      line-height: 60px;
     }
 
     .caption__desc {
@@ -307,13 +298,10 @@
     @include invisLink;
 
     .caption {
-      font-weight: 700;
       font-size: 35px;
       line-height: 60px;
       display: flex;
       align-items: center;
-      text-transform: uppercase;
-      color: #292929;
       padding-left: 35px;
       margin-top: 20px;
     }
@@ -360,13 +348,9 @@
   padding: 183px 0 211px;
 
   .caption {
-    font-weight: 700;
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -0.1em;
-    text-transform: uppercase;
-    color: #292929;
-    position: relative;
     left: -10px;
   }
 
@@ -578,7 +562,6 @@
     }
 
     .caption {
-      font-weight: 700;
       font-size: 100px;
       line-height: 115px;
       left: -12px;
@@ -622,9 +605,6 @@
     @include transform(translateX(100px));
 
     .caption {
-      font-weight: 700;
-      font-size: 75px;
-      line-height: 60px;
     }
 
     .caption__desc {
@@ -669,5 +649,282 @@
       right: 0;
       top: 225px;
     }
+  }
+}
+
+.restaurant-location {
+  position: relative;
+  padding: 176px 0;
+  overflow: hidden;
+
+  @include before {
+    background-image: url("../img/logo-big.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -192px;
+    top: 50%;
+    width: 790px;
+    height: 733px;
+    pointer-events: none;
+    margin-top: -447px;
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    @include transition(opacity 1s);
+    opacity: 0;
+
+    &.swiper-slide-active {
+      opacity: 1;
+
+      .restaurant-location__leftSide {
+        @include transform(translateX(0px));
+      }
+
+      .restaurant-location__rightSide {
+        @include transform(translateX(0px));
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__leftSide {
+    max-width: 631px;
+    width: 100%;
+    padding: 27px 0;
+    @include transition(transform 1s);
+    @include transform(translateX(-1000px));
+  }
+
+  &__rightSide {
+    position: absolute;
+    left: calc(50% - 145px);
+    top: 50%;
+    width: 1105px;
+    height: 737px;
+    @include transition(transform 1s);
+    @include transform(translateX(1000px));
+    margin-top: -284px;
+  }
+
+  &__content {
+    margin-top: 104px;
+  }
+
+  &__head {
+    .num {
+      font-family: $fontKaisel;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 60px;
+      text-transform: uppercase;
+      color: #292929;
+    }
+    .name {
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 60px;
+      text-transform: uppercase;
+      color: $colorBlack;
+    }
+  }
+
+  .caption {
+    left: -15px;
+  }
+
+  .caption__desc {
+    margin-top: 19px;
+  }
+
+  .text-simple {
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 38px;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+
+  .swiper-controls {
+    position: absolute;
+    left: 20px;
+    bottom: -113px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    svg {
+      fill: #665f5b;
+    }
+  }
+}
+
+.news-main {
+  padding: 150px 0 69px;
+  overflow: hidden;
+
+  &__head {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 50px;
+      padding: 0;
+    }
+
+    .col {
+      &:nth-child(2) {
+        flex: 1;
+      }
+    }
+
+    .caption {
+    }
+
+    .caption__desc {
+      margin-top: 19px;
+    }
+
+    .text-simple {
+      width: 100%;
+      border-right: 0.5px solid #665f5b;
+      padding-right: 53px;
+      padding-left: 24px;
+    }
+
+    .link-simple {
+      position: relative;
+      top: -11px;
+    }
+  }
+
+  &__content {
+    margin-top: 49px;
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    width: 571px;
+
+    &:nth-child(1) {
+      width: 810px;
+    }
+  }
+}
+
+.news-item {
+  .picture {
+    width: 100%;
+    height: 434px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .text-simple {
+    margin-top: 27px;
+    min-height: 105px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: $colorBlack;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    @include transition(text-decoration 0.3s);
+    margin-top: 24px;
+    display: inline-block;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration-color: $colorBlack;
+    }
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #001136;
+    display: inline-flex;
+    align-items: center;
+    @include transition(opacity 0.3s);
+    margin-top: 21px;
+
+    svg {
+      fill: #001136;
+      margin-left: 13px;
+    }
+
+    circle {
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.subscribe {
+  position: relative;
+  border-top: 1px solid #665f5b;
+  padding: 80px 0 96px;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 825px;
+    width: 100%;
+  }
+
+  &__right {
+    max-width: 628px;
+    width: 100%;
+  }
+
+  .caption {
+  }
+
+  .caption__desc {
+    margin-top: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding-right: 107px;
+  }
+
+  @include before {
+    background-image: url("../img/logo-big.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: calc(50% + 253px);
+    top: 287px;
+    width: 790px;
+    height: 733px;
+    pointer-events: none;
+    margin-top: -447px;
   }
 }

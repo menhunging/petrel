@@ -51,13 +51,25 @@ $(document).ready(function () {
     const swiper = new Swiper(".restaurant-location .swiper", {
       slidesPerView: 1,
       slidesPerGroup: 1,
-      autoHeight: true,
-      speed: 600,
+      speed: 1200,
       loop: false,
+      effect: "fade",
+      fadeEffect: { crossFade: true },
       navigation: {
-        nextEl: ".concept .swiper-button-next",
-        prevEl: ".concept .swiper-button-prev",
+        nextEl: ".restaurant-location .swiper-button-next",
+        prevEl: ".restaurant-location .swiper-button-prev",
       },
+    });
+  }
+
+  if ($(".news-main").length > 0) {
+    const swiper = new Swiper(".news-main .swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      // navigation: {
+      //   nextEl: ".news-main .swiper-button-next",
+      //   prevEl: ".news-main .swiper-button-prev",
+      // },
     });
   }
 
@@ -73,25 +85,55 @@ $(document).ready(function () {
     });
   }
 
-  if ($(".counter").length) {
-    let minus = $(".counter__minus");
-    let plus = $(".counter__plus");
-    let text = $(".counter__text");
+  if ($(".counter").length > 0) {
+    $(".counter").map(function () {
+      let minus = $(this).find(".counter__minus");
+      let plus = $(this).find(".counter__plus");
+      let text = $(this).find(".counter__text");
 
-    minus.on("click", () => {
-      let count = Number(text.text());
-      text.text(count == 0 ? 0 : count - 1);
-    });
+      minus.on("click", () => {
+        let count = Number(text.text());
+        text.text(count == 0 ? 0 : count - 1);
+      });
 
-    plus.on("click", () => {
-      let count = Number(text.text());
-      text.text(count + 1);
+      plus.on("click", () => {
+        let count = Number(text.text());
+        text.text(count + 1);
+      });
     });
   }
 
-  if ($("#datepicker").length > 0) {
+  if ($(".datepicker").length > 0) {
     $.datepicker.setDefaults($.datepicker.regional["ru"]);
-    $("#datepicker").datepicker();
+
+    $(".datepicker").map(function () {
+      $(this).datepicker();
+    });
+  }
+
+  if ($(".modal").length > 0) {
+    MicroModal.init({
+      openTrigger: "data-custom-open",
+      disableScroll: true,
+      awaitOpenAnimation: true,
+      awaitCloseAnimation: true,
+
+      onShow: () => {
+        $("body").addClass("modal-open");
+      },
+
+      onClose: () => {
+        $("body").removeClass("modal-open");
+      },
+    });
+
+    $("a[data-custom-open]").map(function () {
+      $(this).click((e) => e.preventDefault());
+    });
+  }
+
+  if ($("select").length > 0) {
+    $("select").selectric();
   }
 
   ///////////////////////////////////////
@@ -160,29 +202,6 @@ $(document).ready(function () {
     $(".menu-burger").on("click", function () {
       $(".menu-burger").stop().toggleClass("open");
       $(".header__inner").stop().slideToggle();
-    });
-  }
-
-  if ($("select").length > 0) {
-    $("select").selectric();
-  }
-
-  if ($(".modal").length > 0) {
-    MicroModal.init({
-      openTrigger: "data-custom-open",
-      disableScroll: true,
-
-      onShow: (modal) => {
-        $("body").addClass("modal-open");
-      },
-
-      onClose: (modal) => {
-        $("body").removeClass("modal-open");
-      },
-    });
-
-    $("a[data-custom-open]").map(function () {
-      $(this).click((e) => e.preventDefault());
     });
   }
 
