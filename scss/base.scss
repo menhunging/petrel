@@ -63,6 +63,30 @@ input {
       margin-top: 33px;
     }
   }
+
+  ul {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 360px;
+    gap: 0 135px;
+
+    li {
+      position: relative;
+      padding-left: 8px;
+      line-height: 45px;
+      width: calc(50% - 66px);
+
+      @include before {
+        top: 20px;
+        left: 0;
+        width: 3px;
+        height: 3px;
+        @include border-radius(50%);
+        background-color: #292929;
+      }
+    }
+  }
 }
 
 .menu-burger {
@@ -665,6 +689,7 @@ input {
     left: -175px;
     width: calc(100% + 175px + 175px);
     gap: 4px;
+    padding: 4px 0;
   }
 
   .gallery__item {

@@ -73,6 +73,21 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".services").length > 0) {
+    const swiper = new Swiper(".services .swiper", {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      speed: 1200,
+      loop: false,
+      effect: "fade",
+      fadeEffect: { crossFade: true },
+      navigation: {
+        nextEl: ".services .swiper-button-next",
+        prevEl: ".services .swiper-button-prev",
+      },
+    });
+  }
+
   if ($(".phoneInput").length > 0) {
     $(".phoneInput").map(function () {
       $(this).inputmask({
