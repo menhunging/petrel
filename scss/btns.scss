@@ -79,6 +79,82 @@
     }
   }
 
+  &.btn-basket-add {
+    border: solid 1px #001136;
+    color: #001136;
+    padding: 14px 77px 14px 59px;
+
+    &:hover {
+      background-color: #001136;
+      color: $colorWhite;
+    }
+
+    @include before {
+      content: "+";
+      position: absolute;
+      top: 0;
+      right: 25px;
+      width: 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 35px;
+      line-height: 43px;
+      font-weight: 200;
+    }
+  }
+
+  &.btn-delete {
+    text-decoration-line: underline;
+    color: #001136;
+    display: inline-flex;
+    align-items: center;
+    gap: 19px;
+    @include transition(all 0.3s);
+
+    svg {
+      position: relative;
+      right: auto;
+      top: auto;
+      margin: 0;
+    }
+
+    path {
+      stroke: #001136;
+    }
+
+    &:hover {
+      opacity: 0.75;
+      text-decoration-color: transparent;
+    }
+  }
+
+  &.btn-basket-delete {
+    text-decoration-line: underline;
+    color: #001136;
+    display: inline-flex;
+    align-items: center;
+    gap: 19px;
+    @include transition(all 0.3s);
+
+    svg {
+      position: relative;
+      right: auto;
+      top: auto;
+      margin: 0;
+    }
+
+    path {
+      stroke: #001136;
+    }
+
+    &:hover {
+      opacity: 0.75;
+      text-decoration-color: transparent;
+    }
+  }
+
   svg {
     position: absolute;
     right: 16px;
