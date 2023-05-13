@@ -45,9 +45,50 @@
     }
   }
 
+  &.load-more {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-left: 60px;
+
+    svg {
+      margin-top: -8px;
+    }
+  }
+
+  &.load-menu {
+    display: inline-block;
+    padding: 15px 95px 15px 65px;
+    z-index: 5;
+
+    svg {
+    }
+
+    &:hover {
+      path {
+        &:nth-child(4) {
+          stroke: $colorWhite;
+        }
+
+        &:nth-child(3),
+        &:nth-child(2),
+        &:nth-child(1) {
+          fill: $colorWhite;
+        }
+      }
+    }
+  }
+
   svg {
     position: absolute;
     right: 16px;
+    top: 50%;
+    margin-top: -15px;
+  }
+
+  .icon {
+    position: absolute;
+    right: 35px;
     top: 50%;
     margin-top: -15px;
   }

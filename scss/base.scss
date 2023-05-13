@@ -703,6 +703,53 @@ input {
   }
 }
 
+.pagination {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 84px;
+
+  li {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #a29b9b;
+  }
+
+  a {
+    color: #a29b9b;
+    @include transition(color 0.3s);
+
+    &:hover,
+    &.active {
+      color: $colorBlack;
+    }
+  }
+
+  svg {
+    fill: #292929;
+    @include transition(fill 0.3s);
+  }
+
+  &__next {
+    margin-left: 45px;
+  }
+
+  &__prev {
+    margin-right: 45px;
+  }
+
+  &__prev,
+  &__next {
+    &:hover {
+      svg {
+        fill: #a29b9b;
+      }
+    }
+  }
+}
+
 // modals base
 
 .modal {
