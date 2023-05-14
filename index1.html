@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-  <title>Главная</title>
+  <title>Все страницы</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
   <style>
-    .siteWrapper {
+    body {
       padding: 50px 30px;
       background-color: #000;
       color: #fff;
@@ -27,10 +27,18 @@
 
     a {
       display: table;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: text-decoration 0.3s;
+      text-underline-offset: 5px;
+    }
+
+    a:hover {
+      text-decoration-color: #fff;
     }
 
     a+a {
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     h2 {
@@ -43,19 +51,21 @@
 
 <body>
 
-  <div class="siteWrapper">
-    <h2>Буревестник</h2>
-    <a href="index.html">Главная</a>
-    <a href="about.html">О ресторане</a>
-    <a href="services.html">Услуги</a>
-    <a href="services-item.html">Услуги детальная</a>
-    <a href="news.html">Новости</a>
-    <a href="news-item.html">Новости детальная</a>
-    <a href="menu.html">Меню</a>
-    <a href="menu-item.html">Меню детальная</a>
-    <a href="basket.html">Корзина</a>
-    <a href="order.html">Оформление заказа</a>
-  </div>
+  <h2>Буревестник</h2>
+
+  <a href="index.html">Главная</a>
+  <a href="about.html">О ресторане</a>
+  <a href="services.html">Услуги</a>
+  <a href="services-item.html">Услуги детальная</a>
+  <a href="news.html">Новости</a>
+  <a href="news-item.html">Новости детальная</a>
+  <a href="menu.html">Меню</a>
+  <a href="menu-item.html">Меню детальная</a>
+  <a href="basket.html">Корзина</a>
+  <a href="order.html">Оформление заказа</a>
+  <a href="thanks.html">Спасибо</a>
+  <a href="delivery.html">Доставка</a>
+  <a href="404.html">404</a>
 
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>

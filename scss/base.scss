@@ -415,13 +415,10 @@ input {
 
   &.selectric-above {
     .selectric-items {
-      margin-top: 0px;
-      margin-bottom: -5px;
+      border: solid 1px $colorBlack;
     }
 
     .selectric-scroll ul {
-      padding-top: 0;
-      padding-bottom: 5px;
     }
   }
 }
@@ -964,8 +961,6 @@ input {
   z-index: 999 !important;
 }
 
-// style scroll in blocks
-
 div {
   &::-webkit-scrollbar {
     width: 5px;
@@ -983,7 +978,7 @@ div {
   scrollbar-width: thin;
 }
 
-// хак для хрома (modal hidden body)
+// хаки для хрома scroll чтобы не дергался
 
 @media (min-width: 1200px) {
   _:-webkit-any-link,
@@ -997,6 +992,15 @@ div {
 
   _:-webkit-any-link,
   :root .hidden {
+    padding-right: 17px;
+
+    .header {
+      width: calc(100% - 17px);
+    }
+  }
+
+  _:-webkit-any-link,
+  :root body.compensate-for-scrollbar {
     padding-right: 17px;
 
     .header {

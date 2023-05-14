@@ -173,63 +173,6 @@ $(document).ready(function () {
       speedOut: 600,
     });
   }
-
-  ///////////////////////////////////////
-
-  if ($(".complect-tabs").length) {
-    $(".complect-tabs").tabslet({
-      mouseevent: "click",
-      animation: true,
-    });
-
-    $(".complect-tabs").on("_before", function (e) {
-      $(e.target).find("input").prop("checked", true);
-    });
-  }
-
-  if ($(".rugs-slider").length > 0) {
-    const swiper = new Swiper(".rugs-slider .swiper", {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          translate: ["-120%", 0, -500],
-        },
-        next: {
-          translate: ["120%", 0, -500],
-        },
-      },
-      loop: false,
-      navigation: {
-        nextEl: ".rugs-slider .swiper-button-next",
-        prevEl: ".rugs-slider .swiper-button-prev",
-      },
-      pagination: {
-        el: ".rugs-slider .swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          autoHeight: true,
-        },
-        640: {
-          slidesPerView: 1,
-        },
-      },
-    });
-  }
-
-  if ($("[data-aos]").length) {
-    $("[data-aos]").each((i, el) => {
-      AOS.init({
-        offset: 300,
-        // duration: 1200,
-        once: false,
-      });
-    });
-  }
 });
 
-$(window).resize(function () {});
+// $(window).resize(function () {});

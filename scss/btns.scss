@@ -162,10 +162,18 @@
     margin-top: -15px;
   }
 
+  svg,
+  stroke,
+  path,
+  circle {
+    @include transition(all 0.3s);
+  }
+
   .icon {
     position: absolute;
     right: 35px;
     top: 50%;
     margin-top: -15px;
+    @include transition(all 0.3s);
   }
 }
