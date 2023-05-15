@@ -1,0 +1,72 @@
+@media (max-width: 374px) {
+  .grettings-item .caption {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .grettings .swiper-controls {
+    bottom: 382px;
+  }
+
+  .caption {
+    font-size: 32px;
+    line-height: 50px;
+  }
+
+  .caption__desc {
+    font-size: 25px;
+    line-height: 26px;
+  }
+
+  .concept-item .text-simple {
+    margin-top: 285px;
+  }
+
+  .restaurant-menu__item .caption {
+    font-size: 16px;
+  }
+
+  .reservation .caption {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .reservation__back--right {
+    top: 110px;
+  }
+
+  .btn.btnBlue svg {
+    width: 40px;
+  }
+
+  .restaurant-location .btn {
+    padding-right: 80px;
+  }
+
+  .news-item__button svg {
+    width: 40px;
+  }
+
+  .subscribe .caption {
+    font-size: 28px;
+    line-height: 50px;
+  }
+
+  .caption__desc {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .grettings-inner .caption {
+    font-size: 30px;
+  }
+
+  .text-simple ul li {
+    line-height: 30px;
+  }
+
+  .text-simple ul li::before {
+    top: 15px;
+  }
+
+
+}

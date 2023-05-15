@@ -1,2 +1,138 @@
+@media (max-width: 1899px) {
+  .tabs .gallery {
+    width: 100%;
+    left: 0;
+  }
+
+  .restaurant-contacts .gallery {
+    left: 0;
+    width: 100%;
+  }
+
+  .news-main .swiper-controls {
+    right: 0;
+  }
+
+  .menu-product .load-menu {
+    right: 0;
+  }
+}
+
 @media (max-width: 1619px) {
+  .menu {
+    margin-left: 40px;
+  }
+
+  .header {
+    .logo-wrapper {
+      left: auto;
+    }
+  }
+
+  .header__rightSide {
+    justify-content: space-between;
+  }
+
+  .phone-block {
+    margin: 0 20px 0 50px;
+  }
+
+  .grettings-item {
+    .caption {
+      font-size: 80px;
+      line-height: 95px;
+    }
+
+    .title {
+      font-size: 45px;
+      line-height: 95px;
+    }
+  }
+
+  .grettings {
+    .swiper-controls {
+      left: calc(50% + 512px);
+      bottom: 24px;
+    }
+  }
+
+  .grettings-item__inner {
+    padding-bottom: 80px;
+  }
+
+  .caption {
+    font-size: 65px;
+    line-height: 50px;
+  }
+
+  .concept-item__content {
+    padding: 0 15px;
+  }
+
+  .concept-item--center .swiper-controls {
+    position: relative;
+    width: 147px;
+    right: auto;
+    left: 15px;
+    margin-top: 15px;
+  }
+
+  .concept-item--center .text-simple {
+    max-width: 100%;
+  }
+
+  .restaurant-menu__head {
+    .row {
+      padding: 0 15px;
+    }
+  }
+
+  .reservation__form {
+    margin-left: 13%;
+  }
+
+  .restaurant-location__leftSide {
+    max-width: 520px;
+  }
+
+  .subscribe__right {
+    max-width: 548px;
+  }
+
+  .footer__right {
+    padding-left: 40px;
+  }
+
+  .footer__content {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .services-item__picture {
+    left: 50%;
+  }
+
+  .restaurant-contacts .map-section__list {
+    width: 100%;
+    top: 0;
+    margin-top: 30px;
+  }
+
+  .news-page__content {
+    width: calc(50% - 95px);
+  }
+
+  .menu-page__head .btn {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 30px;
+  }
+
+  .delivery-item__picture {
+    left: calc(50% - 60px);
+  }
+
+  .delivery-item:nth-child(2n) .delivery-item__picture {
+    right: calc(50% - 40px);
+  }
 }

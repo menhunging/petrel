@@ -1,2 +1,236 @@
 @media (max-width: 1439px) {
+  .grettings-item {
+    .title {
+      padding: 0;
+    }
+
+    .caption {
+      left: -15px;
+    }
+
+    .adress {
+      grid-column: 1/3;
+      grid-row: 3/3;
+    }
+  }
+
+  .grettings {
+    .swiper-controls {
+      left: 45px;
+      bottom: auto;
+      position: relative;
+      top: -78px;
+    }
+  }
+
+  .menu {
+    font-size: 14px;
+
+    li {
+      &.sub {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .header__leftSide {
+    width: calc(50% - 115px);
+  }
+
+  .header__rightSide {
+    width: auto;
+  }
+
+  .adress-block {
+    display: none;
+  }
+
+  .phone-block {
+    margin: 0;
+  }
+
+  .header__rightSide {
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  .header__content {
+    min-height: 125px;
+  }
+
+  .header .logo-wrapper {
+    left: 50%;
+    position: absolute;
+    margin-left: -90px;
+  }
+
+  .grettings-item .caption {
+    font-size: 70px;
+    line-height: 85px;
+  }
+
+  .grettings-item .title {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0;
+  }
+
+  .concept-item .picture {
+    right: calc(50% + 90px);
+  }
+
+  .concept-item--right .picture {
+    left: calc(50% + 100px);
+    right: auto;
+  }
+
+  .concept {
+    padding: 70px 0;
+  }
+
+  .concept-item--center {
+    min-height: 800px;
+  }
+
+  .reservation__form {
+    margin: 0 auto;
+  }
+
+  .reservation__back--right {
+    left: calc(50% + 400px);
+  }
+
+  .reservation__back--left {
+    right: calc(50% + 430px);
+  }
+
+  .reservation {
+    padding: 150px 0 120px;
+  }
+
+  .gallery__leftSide .caption {
+    font-size: 70px;
+    line-height: 85px;
+  }
+
+  .gallery__leftSide .desc {
+    font-size: 48px;
+    line-height: 40px;
+  }
+
+  .gallery__grettings {
+    padding: 5%;
+  }
+
+  .restaurant-location__rightSide {
+    width: 700px;
+    height: 537px;
+    left: calc(50% + 5px);
+  }
+
+  .restaurant-location {
+    padding: 120px 0;
+  }
+
+  .subscribe__content {
+    flex-direction: column;
+  }
+
+  .subscribe__right {
+    margin-top: 35px;
+  }
+
+  .footer__info {
+    flex-wrap: wrap;
+
+    li {
+      width: 100%;
+    }
+  }
+
+  .menu-open {
+    padding-top: 100px;
+  }
+
+  .menu-open__content {
+    padding: 50px 20px 100px 12px;
+    height: calc(100vh - 100px);
+  }
+
+  .grettings-inner {
+    .caption {
+      font-size: 70px;
+      line-height: 85px;
+    }
+  }
+
+  .tabs .caption {
+    left: -7px;
+  }
+
+  .map-section__map {
+    position: absolute;
+    left: calc(50% - -16px);
+    top: 50%;
+    width: 585px;
+    height: 600px;
+    margin-top: -300px;
+  }
+
+  .services-item__picture {
+    left: calc(50% + 80px);
+    width: 610px;
+    height: 670px;
+  }
+
+  .new-block .picture {
+    width: 683px;
+    height: 604px;
+    left: calc(50% - -27px);
+    top: 50%;
+    margin-top: -300px;
+  }
+
+  .menu-full__name {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 0 0 15px;
+  }
+
+  .menu-product__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 0;
+  }
+
+  .menu-product__item {
+    width: calc(50% - 15px);
+    gap: 15px;
+
+    & + .menu-product__item {
+      margin-top: 0;
+    }
+  }
+
+  .menu-product .load-more {
+    margin-top: 30px;
+  }
+
+  .delivery-item__picture {
+    left: calc(50% - -70px);
+    width: 900px;
+    top: 50%;
+    margin-top: -260px;
+  }
+
+  .delivery-item:nth-child(2n) .delivery-item__picture {
+    right: calc(50% + 70px);
+  }
+
+  .delivery-item + .delivery-item {
+    margin-top: 0;
+  }
 }

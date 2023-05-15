@@ -1,2 +1,59 @@
 @media (max-width: 639px) {
+  .news-page__item {
+    width: 100%;
+    min-height: inherit;
+    padding: 0;
+
+    & + .news-page__item {
+      margin-top: 30px;
+    }
+  }
+
+  .news-page__list {
+    margin-top: 30px;
+  }
+
+  .pagination {
+    gap: 15px;
+  }
+
+  .pagination__next {
+    margin-left: 25px;
+  }
+
+  .pagination__prev {
+    margin-right: 25px;
+  }
+
+  .news-page__link-more {
+    margin-top: 20px;
+  }
+
+  .news-page {
+    padding: 30px 0;
+  }
+
+  .menu-product .col:nth-child(3) {
+    width: 100%;
+  }
+
+  .menu-product__item {
+    width: 100%;
+  }
+
+  .menu-product__list {
+    padding: 0;
+  }
+
+  .menu-product__name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+  .basket {
+    .caption {
+      font-size: 27px;
+    }
+  }
 }

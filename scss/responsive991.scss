@@ -1,2 +1,299 @@
 @media (max-width: 991px) {
+  .grettings-item__inner {
+    display: block;
+    padding-bottom: 110px;
+  }
+
+  .grettings-item .title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .grettings-item .caption {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .grettings-item .adress {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .caption {
+    font-size: 55px;
+    line-height: 40px;
+  }
+
+  .reservation .caption {
+    font-size: 55px;
+    line-height: 40px;
+  }
+
+  .concept-item__content {
+    padding: 0;
+  }
+  .concept-item__content .caption__desc {
+    margin-top: 20px;
+  }
+
+  .concept-item__content .caption {
+    left: -5px;
+  }
+  .concept-item .picture {
+    height: 300px;
+    top: 140px;
+  }
+
+  .concept-item .text-simple {
+    margin-top: 345px;
+  }
+
+  .concept .swiper-controls {
+    position: relative;
+    padding: 0 15px;
+  }
+
+  .text-simple {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .concept {
+    padding: 70px 0 0;
+  }
+
+  .restaurant-menu .swiper {
+    margin-top: 40px;
+  }
+
+  .reservation {
+    padding: 100px 0 50px;
+  }
+
+  .reservation__back--right {
+    left: 0;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    top: 240px;
+  }
+
+  .reservation__back .picture img {
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .reservation .input-list {
+    margin-top: 345px;
+  }
+
+  .reservation__form {
+    padding: 0;
+  }
+
+  .restaurant-menu__item .caption {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+
+  .boss__content {
+    max-width: 100%;
+  }
+
+  .boss {
+    padding: 50px 0;
+  }
+
+  .boss__picture--right {
+    width: 565px;
+    height: 600px;
+    left: auto;
+    top: auto;
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .boss__content .text-simple {
+    margin-top: 30px;
+  }
+
+  .boss__content .btn {
+    margin-top: 30px;
+  }
+
+  .restaurant-location {
+    padding: 50px 0;
+  }
+
+  .footer__content {
+    display: block;
+  }
+
+  .footer .logo-wrapper {
+    display: table;
+    margin: 0 auto;
+  }
+
+  .footer__right {
+    padding: 0;
+    border: 0;
+    display: block;
+  }
+
+  .footer__menu {
+    border-top: solid 1px $colorWhite;
+    border-bottom: solid 1px $colorWhite;
+    padding: 30px;
+    margin: 30px auto;
+  }
+
+  .footer__info {
+    flex-wrap: nowrap;
+  }
+
+  .footer__info li {
+    width: calc(100% / 3);
+  }
+
+  .footer__phone-call {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__social {
+    padding: 15px 0;
+  }
+
+  .footer__links li {
+    text-align: center;
+  }
+
+  .footer .link-dev {
+    margin: 40px auto 0;
+    display: table;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .menu-open__info {
+    flex-wrap: wrap;
+  }
+
+  .menu-open__info li {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .menu-open__bron .caption {
+    font-size: 40px;
+    line-height: 40px;
+    left: -7px;
+  }
+
+  .menu-open__bron .caption__desc {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .gallery__leftSide .desc {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .gallery__leftSide .caption {
+    font-size: 50px;
+    line-height: 55px;
+    left: -7px;
+  }
+
+  .tabs__links {
+    gap: 85px;
+  }
+
+  .text-simple ul {
+    flex-flow: auto;
+    height: auto;
+    gap: 0;
+  }
+
+  .text-simple ul li {
+    width: 100%;
+    line-height: 40px;
+  }
+
+  .menu-page {
+    & + .reservation {
+      padding: 50px 0;
+      .reservation__back--right {
+        top: 180px;
+      }
+    }
+  }
+
+  .menu-product__info {
+    width: 100%;
+    font-size: 16px;
+
+    & > * {
+      width: auto;
+    }
+  }
+
+  .menu-product__name {
+    font-size: 20px;
+  }
+
+  .menu-product .tabs-wrapper {
+    padding: 0;
+  }
+
+  .menu-product .load-menu {
+    position: relative;
+    top: auto;
+    margin: 0 auto;
+    left: auto;
+    right: auto;
+    display: table;
+    margin: 0px auto 30px;
+  }
+
+  .basket-line {
+    flex-wrap: wrap;
+  }
+
+  .basket-line__name {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .basket-line .counter {
+    margin: 0 auto 0 0;
+  }
+
+  .basket-head__controls {
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .basket-line {
+    padding: 30px 0;
+  }
+
+  .basket-details .title {
+    font-size: 30px;
+  }
+
+  #modal-reservation .modal__inner {
+    max-width: 918px;
+    padding: 90px 30px;
+  }
 }

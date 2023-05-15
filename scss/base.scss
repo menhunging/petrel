@@ -642,11 +642,12 @@ input {
 
   &__links {
     display: flex;
-    flex-wrap: wrap;
     gap: 168px;
     border-bottom: 1px solid #cbc1bc;
     margin-top: 25px;
     padding-bottom: 9px;
+    overflow-x: auto;
+    overflow-y: hidden;
 
     li {
       &.active {
@@ -667,6 +668,7 @@ input {
     text-transform: uppercase;
     color: #80726a;
     position: relative;
+    white-space: nowrap;
 
     @include before {
       width: 0px;
