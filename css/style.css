@@ -1419,15 +1419,15 @@ div::-webkit-scrollbar-thumb {
   padding: 0 12px;
 }
 .header__rightSide {
-  width: calc(50% - 90px);
+  width: calc(50% - 150px);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
 }
 .header .logo-wrapper {
-  left: 27px;
-  width: 85px;
+  left: 0;
+  width: 115px;
 }
 .header .btn {
   min-width: 203px;
@@ -1445,7 +1445,7 @@ div::-webkit-scrollbar-thumb {
 }
 
 .menu {
-  margin-left: 81px;
+  margin-left: 50px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -1460,6 +1460,7 @@ div::-webkit-scrollbar-thumb {
 }
 .menu li {
   position: relative;
+  text-transform: uppercase;
 }
 .menu li.sub::before {
   content: "";

@@ -23,7 +23,7 @@
   }
 
   &__rightSide {
-    width: calc(50% - 90px);
+    width: calc(50% - 150px);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -31,8 +31,8 @@
   }
 
   .logo-wrapper {
-    left: 27px;
-    width: 85px;
+    left: 0;
+    width: 115px;
   }
 
   .btn {
@@ -53,7 +53,7 @@
 }
 
 .menu {
-  margin-left: 81px;
+  margin-left: 50px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -69,6 +69,7 @@
 
   li {
     position: relative;
+    text-transform: uppercase;
 
     &.sub {
       @include before {
