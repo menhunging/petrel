@@ -4288,8 +4288,8 @@ div::-webkit-scrollbar-thumb {
     fill: rgb(255, 255, 255);
   }
   .header .logo-wrapper {
-    margin-left: -55px;
-    width: 110px;
+    margin-left: -105px;
+    width: 170px;
   }
   .grettings-item .title {
     font-size: 35px;
@@ -4705,6 +4705,12 @@ div::-webkit-scrollbar-thumb {
   .delivery-item:nth-child(2n) .delivery-item__picture {
     right: auto;
   }
+  .adress-block {
+    display: flex;
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 @media (max-width: 991px) {
   .grettings-item__inner {
@@ -4955,8 +4961,8 @@ div::-webkit-scrollbar-thumb {
     padding: 0 10px;
   }
   .header .logo-wrapper {
-    margin-left: -30px;
-    width: 59px;
+    margin-left: -75px;
+    width: 130px;
   }
   .header__content {
     min-height: 65px;
@@ -5590,6 +5596,14 @@ div::-webkit-scrollbar-thumb {
   }
   .basket .caption {
     font-size: 27px;
+  }
+  .adress-block {
+    margin-right: 0;
+    top: -2px;
+    position: relative;
+  }
+  .adree-block__text {
+    display: none;
   }
 }
 @media (max-width: 374px) {

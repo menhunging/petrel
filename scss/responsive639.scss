@@ -50,10 +50,19 @@
     line-height: 24px;
   }
 
-
   .basket {
     .caption {
       font-size: 27px;
     }
+  }
+
+  .adress-block {
+    margin-right: 0;
+    top: -2px;
+    position: relative;
+  }
+
+  .adree-block__text {
+    display: none;
   }
 }

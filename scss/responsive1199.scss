@@ -21,8 +21,8 @@
 
   .header {
     .logo-wrapper {
-      margin-left: -55px;
-      width: 110px;
+      margin-left: -105px;
+      width: 170px;
     }
   }
 
@@ -524,5 +524,12 @@
 
   .delivery-item:nth-child(2n) .delivery-item__picture {
     right: auto;
+  }
+
+  .adress-block {
+    display: flex;
+    margin-right: 30px;
+    font-size: 14px;
+  line-height: 18px;
   }
 }
