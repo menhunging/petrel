@@ -18,6 +18,7 @@ body {
 label,
 textarea,
 input {
+  -webkit-appearance: none;
   font-family: $fontMain;
 }
 

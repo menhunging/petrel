@@ -224,6 +224,7 @@ body.hidden {
 label,
 textarea,
 input {
+  -webkit-appearance: none;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -1200,6 +1201,7 @@ div::-webkit-scrollbar-thumb {
   }
 }
 .btn {
+  -webkit-appearance: none;
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
