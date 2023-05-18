@@ -1465,7 +1465,7 @@
     }
   }
 
-  .swiper-controls{
+  .swiper-controls {
     display: none;
   }
 }
@@ -2284,10 +2284,22 @@
   display: none;
 }
 
-.news-main__more{
+.news-main__more {
   display: none;
 
-  .btn{
+  .btn {
     display: inline-block;
+  }
+}
+
+.input-time {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // z-index: 5;
+
+  &.visible {
+    z-index: 5;
   }
 }

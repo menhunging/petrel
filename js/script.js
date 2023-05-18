@@ -146,6 +146,18 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".input-time").length > 0) {
+    $(".input-time input").map(function () {
+      $(this).inputmask({
+        mask: "99:99",
+        placeholder: "0",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
+        clearIncomplete: true,
+      });
+    });
+  }
+
   if ($(".counter").length > 0) {
     $(".counter").map(function () {
       let minus = $(this).find(".counter__minus");
@@ -194,7 +206,24 @@ $(document).ready(function () {
   }
 
   if ($("select").length > 0) {
-    $("select").selectric();
+    $("select").map(function () {
+      let inputTime = $(this).parents(".input-item").find(".input-time");
+
+      $(this).selectric({
+        onOpen: function () {
+          inputTime.addClass("visible");
+          inputTime.find("input").focus();
+        },
+        onChange: function (element) {
+          let current = $(element).val();
+
+          $(inputTime.find("input")).val(current);
+        },
+        onClose: function () {
+          inputTime.removeClass("visible");
+        },
+      });
+    });
   }
 
   if ($(".menu-burger").length) {
@@ -219,6 +248,13 @@ $(document).ready(function () {
       speedOut: 600,
     });
   }
-});
 
-// $(window).resize(function () {});
+  if ($("[data-aos]").length) {
+    $("[data-aos]").each((i, el) => {
+      AOS.init({
+        offset: 400,
+        once: false,
+      });
+    });
+  }
+});

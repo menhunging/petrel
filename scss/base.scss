@@ -386,7 +386,7 @@ input {
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
-    color: $colorBlack;
+    color: transparent;
     height: 100%;
     padding: 14px 0;
     margin: 0;
@@ -436,7 +436,7 @@ input {
 
 .selectric-items {
   background: transparent;
-  background-color: #f4f1ef;
+  background-color: #fbf9f8;
   border: 1px solid $colorBlack;
   border-top: 0;
   overflow: hidden;
@@ -473,7 +473,7 @@ input {
 }
 
 .ui-datepicker {
-  background-color: #f4f1ef;
+  background-color: #fbf9f8;
   border: solid 1px $colorBlack !important;
   @include border-radius(0);
   @include box-shadow(0px 0px 15px rgba(0, 0, 0, 0.33));
@@ -856,7 +856,7 @@ input {
 }
 
 .modal__inner {
-  background-color: #f4f1ef;
+  background-color: #fbf9f8;
   margin: 0 auto;
   position: relative;
   background-image: url("../img/logo-big.svg");
@@ -987,6 +987,10 @@ input {
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1;
+}
+
+.selectric-open {
+  z-index: 4;
 }
 
 div {

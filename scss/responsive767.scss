@@ -393,13 +393,13 @@
   }
 
   .gallery__leftSide .caption {
-    font-size: 35px;
-    line-height: 55px;
+    font-size: 39px;
+    line-height: 45px;
   }
 
   .gallery__leftSide .desc {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .gallery__leftSide {
@@ -513,6 +513,10 @@
 
   .news-main .swiper-controls {
     display: none;
+  }
+
+  .gallery__grettings {
+    padding: 2% 3%;
   }
 
   .menu-page__head .btn {
