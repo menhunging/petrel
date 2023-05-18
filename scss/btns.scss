@@ -1,5 +1,6 @@
 .btn {
   -webkit-appearance: none;
+  @include border-radius(0);
   position: relative;
   @include transition(all 0.3s);
   @include border-radius(30px);

@@ -19,6 +19,7 @@ label,
 textarea,
 input {
   -webkit-appearance: none;
+  @include border-radius(0);
   font-family: $fontMain;
 }
 
