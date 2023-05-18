@@ -238,7 +238,7 @@ input {
   margin-top: auto;
 }
 .siteWrapper.innerPage .main {
-  padding-top: 98px;
+  padding-top: 90px;
 }
 
 .logo-wrapper {
@@ -2257,7 +2257,7 @@ div::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   width: 33.3333333333%;
-  padding-top: 28.5416666667%;
+  padding-top: 23.1770833333%;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -3217,6 +3217,9 @@ div::-webkit-scrollbar-thumb {
   margin-left: 65px;
   padding-left: 36px;
   padding-right: 105px;
+}
+.restaurant-contacts .swiper-controls {
+  display: none;
 }
 
 .news-page {
@@ -4892,7 +4895,7 @@ div::-webkit-scrollbar-thumb {
   }
   .header .logo-wrapper {
     margin-left: -30px;
-    width: 60px;
+    width: 59px;
   }
   .header__content {
     min-height: 65px;
@@ -5292,6 +5295,10 @@ div::-webkit-scrollbar-thumb {
   }
   .menu-page__head .btn {
     margin: 30px auto 0;
+    width: 100%;
+    text-align: center;
+    max-width: 320px;
+    white-space: nowrap;
   }
   .new-block {
     min-height: inherit;

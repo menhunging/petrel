@@ -496,7 +496,7 @@
     text-transform: uppercase;
     color: $colorWhite;
     width: calc(100% / 3);
-    padding-top: calc(548 / 1920 * 100%);
+    padding-top: calc(445 / 1920 * 100%);
     @include invisLink;
     overflow: hidden;
 
@@ -1463,6 +1463,10 @@
       padding-left: 36px;
       padding-right: 105px;
     }
+  }
+
+  .swiper-controls{
+    display: none;
   }
 }
 
