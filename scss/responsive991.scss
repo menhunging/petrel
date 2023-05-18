@@ -135,10 +135,11 @@
 
   .footer__content {
     display: block;
+    text-align: center;
   }
 
   .footer .logo-wrapper {
-    display: table;
+    display: inline-block;
     margin: 0 auto;
   }
 
