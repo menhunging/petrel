@@ -1,7 +1,7 @@
 body {
   font-family: $fontMain;
   color: $colorBlack;
-  background-color: #f4f1ef;
+  background-color: #fbf9f8;
 
   &.hidden {
     overflow: hidden;
@@ -34,7 +34,7 @@ input {
 
   &.innerPage {
     .main {
-      padding-top: 125px;
+      padding-top: 98px;
     }
   }
 }
@@ -267,8 +267,10 @@ input {
 
     &:checked {
       & + label {
+        color: $colorBlack;
+
         &::after {
-          opacity: 1;
+          background-color: $colorBlack;
         }
       }
     }
@@ -281,9 +283,10 @@ input {
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    color: $colorBlack;
+    color: #80726a;
     display: block;
     text-align: left;
+    @include transition(color 0.3s);
 
     @include before {
       left: 0;
@@ -304,7 +307,15 @@ input {
       margin-top: -4px;
       background-color: #80726a;
       @include border-radius(50%);
-      opacity: 0;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    @include transition(text-decoration 0.3s);
+
+    &:hover {
+      text-decoration-color: transparent;
     }
   }
 }
@@ -643,11 +654,11 @@ input {
   &__links {
     display: flex;
     gap: 168px;
-    border-bottom: 1px solid #cbc1bc;
     margin-top: 25px;
     padding-bottom: 9px;
     overflow-x: auto;
     overflow-y: hidden;
+    position: relative;
 
     li {
       &.active {
@@ -682,6 +693,16 @@ input {
 
   &__body {
     margin-top: 41px;
+    position: relative;
+
+    @include before {
+      width: 5000px;
+      height: 1px;
+      background-color: #cbc1bc;
+      left: 0;
+      top: -42px;
+      z-index: -1;
+    }
   }
 
   .gallery {
@@ -961,6 +982,11 @@ input {
 
 .ui-datepicker {
   z-index: 999 !important;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
 }
 
 div {

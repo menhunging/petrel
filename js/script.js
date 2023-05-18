@@ -75,6 +75,7 @@ $(document).ready(function () {
     const swiper = new Swiper(".news-main .swiper", {
       slidesPerView: "auto",
       spaceBetween: 20,
+      autoHeight: true,
       navigation: {
         nextEl: ".news-main .swiper-button-next",
         prevEl: ".news-main .swiper-button-prev",

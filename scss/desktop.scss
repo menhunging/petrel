@@ -152,6 +152,7 @@
   flex-wrap: wrap;
   min-height: 750px;
   padding-bottom: 17px;
+  position: relative;
 
   .picture {
     top: 0;
@@ -1868,6 +1869,7 @@
 
 .basket {
   padding: 40px 0;
+  overflow: hidden;
 
   .caption {
     left: -15px;
@@ -2276,4 +2278,12 @@
 
 .services-item__picture.mobile {
   display: none;
+}
+
+.news-main__more{
+  display: none;
+
+  .btn{
+    display: inline-block;
+  }
 }

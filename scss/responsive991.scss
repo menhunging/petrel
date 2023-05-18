@@ -70,9 +70,13 @@
     padding: 100px 0 50px;
   }
 
+  .reservation__back--left{
+    display: none;
+  }
+
   .reservation__back--right {
-    left: 0;
-    width: 100%;
+    left: 15px;
+    width: calc(100% - 30px);
     height: 300px;
     margin: 0;
     top: 240px;
