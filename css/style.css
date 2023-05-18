@@ -4467,6 +4467,13 @@ div::-webkit-scrollbar-thumb {
     -o-transition: all 1s 1s;
     transition: all 1s 1s;
   }
+  .gallery__grettings:hover .gallery__leftSide {
+    -moz-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    -webkit-transform: translateX(-2000px);
+    -o-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
   .gallery__leftSide {
     -webkit-transition: all 1s 1s;
     -moz-transition: all 1s 1s;

@@ -213,6 +213,7 @@
   .gallery__mobile__head {
   }
 
+
   .aos-animate {
     .gallery__grettings {
       pointer-events: none;
@@ -244,6 +245,12 @@
 
     &:before {
       @include transition(all 1s 1s);
+    }
+
+    &:hover{
+      .gallery__leftSide {
+        @include transform(translateX(-2000px));
+      }
     }
   }
 
