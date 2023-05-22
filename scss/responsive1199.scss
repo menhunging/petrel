@@ -213,7 +213,6 @@
   .gallery__mobile__head {
   }
 
-
   .aos-animate {
     .gallery__grettings {
       pointer-events: none;
@@ -247,7 +246,7 @@
       @include transition(all 1s 1s);
     }
 
-    &:hover{
+    &:hover {
       .gallery__leftSide {
         @include transform(translateX(-2000px));
       }
@@ -530,6 +529,6 @@
     display: flex;
     margin-right: 30px;
     font-size: 14px;
-  line-height: 18px;
+    line-height: 18px;
   }
 }
