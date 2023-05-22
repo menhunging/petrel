@@ -3534,6 +3534,9 @@ div::-webkit-scrollbar-thumb {
   object-fit: cover;
 }
 
+.menu-product {
+  overflow: hidden;
+}
 .menu-product .text-simple {
   padding: 39px 0;
 }
