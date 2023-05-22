@@ -127,7 +127,11 @@
   }
 
   .restaurant-menu .swiper {
-    margin-top: -47px;
+    margin-top: 0;
+  }
+
+  .restaurant-menu__head .link-simple {
+    justify-content: flex-end;
   }
 
   .restaurant-menu .picture {

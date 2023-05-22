@@ -69,4 +69,8 @@
   .adree-block__text {
     display: none;
   }
+
+  .menu-product .col:nth-child(2) {
+    min-height: inherit;
+  }
 }
