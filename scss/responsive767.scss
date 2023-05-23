@@ -754,4 +754,13 @@
   .tabs__body::before {
     display: none;
   }
+
+  .menu-product__item .btn svg {
+    right: 27px;
+  }
+
+  .menu-product__item .btn {
+    padding-left: 50px;
+    padding-right: 60px;
+  }
 }
