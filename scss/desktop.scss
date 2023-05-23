@@ -81,7 +81,7 @@
 
   .title {
     grid-column: 1/3;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 55px;
     line-height: 115px;
     text-transform: uppercase;
@@ -101,7 +101,7 @@
   .adress {
     grid-column: 2/3;
     grid-row: 2/3;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 25px;
     line-height: 40px;
     padding-bottom: 19px;
@@ -590,7 +590,7 @@
     @include transition(transform 0.3s);
 
     .desc {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 30px;
       line-height: 30px;
     }
@@ -608,7 +608,7 @@
     @include transition(transform 0.3s);
 
     .desc {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 68px;
       line-height: 70px;
     }
@@ -780,7 +780,7 @@
       color: #292929;
     }
     .name {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 25px;
       line-height: 60px;
       text-transform: uppercase;
@@ -1084,7 +1084,7 @@
 
   li {
     position: relative;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     line-height: 35px;
     margin-right: 34px;
@@ -1209,7 +1209,7 @@
     li {
       display: flex;
       align-items: center;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: #292929;
@@ -1228,7 +1228,7 @@
   }
 
   .title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 35px;
     line-height: 43px;
     left: 0;
@@ -1530,7 +1530,7 @@
   }
 
   &__time {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     line-height: 35px;
     display: block;
@@ -1791,7 +1791,7 @@
   }
 
   .col {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     line-height: 35px;
     color: #292929;
@@ -1847,7 +1847,7 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 35px;
     color: #7d7d7d;
@@ -1950,7 +1950,7 @@
   }
 
   .conversion {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #7d7d7d;
@@ -1965,7 +1965,7 @@
   }
 
   &__name {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 35px;
     max-width: 318px;
@@ -2119,7 +2119,7 @@
   width: 100%;
 
   &__title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 35px;
     line-height: 35px;
     color: #292929;
@@ -2131,7 +2131,7 @@
 }
 
 .order-list {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 35px;
   color: #292929;
@@ -2169,7 +2169,7 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 30px;
   line-height: 55px;
   color: #292929;
@@ -2183,7 +2183,7 @@
   padding: 180px 0 162px;
 
   .title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 55px;
     line-height: 55px;
     text-align: center;
@@ -2264,7 +2264,7 @@
   }
 
   &__text {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 35px;
     color: #292929;

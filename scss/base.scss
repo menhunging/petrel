@@ -55,7 +55,7 @@ input {
 }
 
 .text-simple {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 35px;
   color: #292929;
@@ -127,7 +127,7 @@ input {
 
   &__close {
     display: none;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: $colorWhite;
@@ -218,7 +218,7 @@ input {
   %stylesInput {
     border: 0;
     border-bottom: 1px solid $colorBlack;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: $colorBlack;
@@ -231,7 +231,7 @@ input {
   }
 
   label {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #80726a;
@@ -282,7 +282,7 @@ input {
     cursor: pointer;
     padding-left: 38px;
     position: relative;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #80726a;
@@ -325,7 +325,7 @@ input {
 .counter {
   position: relative;
   color: $colorBlack;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 60px;
   text-transform: uppercase;
@@ -385,7 +385,7 @@ input {
   @include border-radius(0);
 
   .label {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: transparent;
@@ -629,7 +629,7 @@ input {
 }
 
 .link-dev {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #8d8d8d;
@@ -675,7 +675,7 @@ input {
   }
 
   &__link {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 60px;
     text-transform: uppercase;
@@ -733,7 +733,7 @@ input {
   margin-top: 84px;
 
   li {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #a29b9b;
@@ -825,7 +825,7 @@ input {
   top: 32px;
   display: flex;
   z-index: 10;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #292929;
