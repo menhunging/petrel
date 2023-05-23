@@ -1800,6 +1800,12 @@
     &:nth-child(2){
       width: 100%; 
     }
+
+    
+    &:nth-child(3){
+      width: 180px;
+      text-align: right;
+    }
   }
 
   &__list {
@@ -1825,6 +1831,7 @@
         margin-top: -8px;
       }
     }
+
   }
 
   &__name {
