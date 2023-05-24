@@ -5290,7 +5290,7 @@ div::-webkit-scrollbar-thumb {
     padding-top: 70px;
   }
   .menu-open__content {
-    padding: 20px 30px 100px 0;
+    padding: 20px 30px 130px 0;
     height: calc(100vh - 70px);
   }
   .menu-open__bron .caption {
