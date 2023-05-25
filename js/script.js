@@ -126,6 +126,7 @@ $(document).ready(function () {
       speed: 1200,
       loop: false,
       effect: "fade",
+      autoHeight:true,
       fadeEffect: { crossFade: true },
       navigation: {
         nextEl: ".services .swiper-button-next",

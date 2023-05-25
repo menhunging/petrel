@@ -540,4 +540,19 @@
   .menu-product .col:nth-child(2){
     max-width: 100%;
   }
+
+  .services .swiper-controls {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 15px;
+  }
+
+  .services .swiper {
+    padding-top: 35px;
+  }
+
+  .services {
+    padding: 30px 0;
+  }
 }

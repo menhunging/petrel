@@ -458,7 +458,15 @@
     max-width: 100%;
   }
 
-  .text-block .caption {
+  .services {
+    padding: 0;
+  }
+
+  .services .swiper {
+    padding-top: 105px;
+  }
+
+   .text-block .caption {
     left: -7px;
   }
 
@@ -742,7 +750,7 @@
   }
 
   .grettings-inner__content {
-    height: 200px;
+    height: 300px;
   }
 
   .news-main__more {
@@ -762,5 +770,13 @@
   .menu-product__item .btn {
     padding-left: 50px;
     padding-right: 60px;
+  }
+
+  .breadcrumbs li:last-child {
+    overflow: hidden;
+  }
+
+  .breadcrumbs li > span {
+    max-width: 100%;
   }
 }
