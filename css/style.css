@@ -2789,7 +2789,7 @@ div::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 0 73px 0;
+  padding-bottom: 20px;
   position: relative;
 }
 .grettings-inner .caption {
@@ -2827,19 +2827,18 @@ div::-webkit-scrollbar-thumb {
   object-fit: cover;
   object-position: bottom;
 }
-.grettings-inner + .breadcrumbs {
-  margin-top: -55px;
-  margin-bottom: 20px;
+.grettings-inner .breadcrumbs {
   padding: 0;
   border: 0;
+  margin-top: 30px;
 }
-.grettings-inner + .breadcrumbs li {
+.grettings-inner .breadcrumbs li {
   color: rgb(255, 255, 255);
 }
-.grettings-inner + .breadcrumbs li::before {
+.grettings-inner .breadcrumbs li::before {
   background-image: url("../img/arrow-breadcrumbs.svg");
 }
-.grettings-inner + .breadcrumbs li a {
+.grettings-inner .breadcrumbs li a {
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-transition: text-decoration 0.3s;
@@ -2847,7 +2846,7 @@ div::-webkit-scrollbar-thumb {
   -o-transition: text-decoration 0.3s;
   transition: text-decoration 0.3s;
 }
-.grettings-inner + .breadcrumbs li a:hover {
+.grettings-inner .breadcrumbs li a:hover {
   text-decoration-color: rgb(255, 255, 255);
 }
 
@@ -5160,7 +5159,7 @@ div::-webkit-scrollbar-thumb {
     top: 169px;
   }
   .reservation__back--right {
-    height: 160px;
+    height: 170px;
     margin: 0;
     left: 10px;
     width: calc(100% - 20px);
@@ -5619,7 +5618,8 @@ div::-webkit-scrollbar-thumb {
     padding: 50px 20px;
   }
   .grettings-inner__content {
-    height: 300px;
+    height: 200px;
+    padding-bottom: 10px;
   }
   .news-main__more {
     display: block;
@@ -5641,6 +5641,12 @@ div::-webkit-scrollbar-thumb {
   }
   .breadcrumbs li > span {
     max-width: 100%;
+  }
+  .grettings-inner .breadcrumbs {
+    margin-top: 10px;
+  }
+  .about-section .text-simple {
+    padding: 30px 0;
   }
 }
 @media (max-width: 639px) {
