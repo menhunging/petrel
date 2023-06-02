@@ -4773,10 +4773,10 @@ div::-webkit-scrollbar-thumb {
   .services {
     padding: 30px 0;
   }
-  .reservation .input-item .input-time {
+  .reservation__form .input-item .input-time {
     display: none;
   }
-  .reservation select {
+  .reservation__form select {
     border: 0;
     border-bottom-color: currentcolor;
     border-bottom-style: none;
