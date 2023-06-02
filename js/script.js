@@ -207,24 +207,26 @@ $(document).ready(function () {
   }
 
   if ($("select").length > 0) {
-    $("select").map(function () {
-      let inputTime = $(this).parents(".input-item").find(".input-time");
-
-      $(this).selectric({
-        onOpen: function () {
-          inputTime.addClass("visible");
-          inputTime.find("input").focus();
-        },
-        onChange: function (element) {
-          let current = $(element).val();
-
-          $(inputTime.find("input")).val(current);
-        },
-        onClose: function () {
-          inputTime.removeClass("visible");
-        },
+    if ($(window).width() >= 1200){
+      $("select").map(function () {
+        let inputTime = $(this).parents(".input-item").find(".input-time");
+  
+        $(this).selectric({
+          onOpen: function () {
+            inputTime.addClass("visible");
+            inputTime.find("input").focus();
+          },
+          onChange: function (element) {
+            let current = $(element).val();
+  
+            $(inputTime.find("input")).val(current);
+          },
+          onClose: function () {
+            inputTime.removeClass("visible");
+          },
+        });
       });
-    });
+    }
   }
 
   if ($(".menu-burger").length) {
