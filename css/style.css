@@ -1378,6 +1378,14 @@ div::-webkit-scrollbar-thumb {
   transition: all 0.3s;
 }
 
+.btn.addbasket svg {
+  opacity: 0;
+}
+
+.btn.addbasket {
+  background-color: #14306d;
+}
+
 .caption {
   position: relative;
   font-family: "Kaisei Decol", serif;
@@ -4015,6 +4023,29 @@ div::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+.basket-block {
+  position: relative;
+}
+
+.basket-count {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  position: absolute;
+  right: 27px;
+  top: -2px;
+}
+
 @media (max-width: 1899px) {
   .tabs .gallery {
     width: 100%;
@@ -4121,6 +4152,9 @@ div::-webkit-scrollbar-thumb {
   }
   .delivery-item:nth-child(2n) .delivery-item__picture {
     right: calc(50% - 40px);
+  }
+  .basket-count {
+    right: 17px;
   }
 }
 @media (max-width: 1439px) {
@@ -4312,6 +4346,9 @@ div::-webkit-scrollbar-thumb {
   .menu-product .col:nth-child(3) {
     text-align: left;
     width: 50%;
+  }
+  .basket-count {
+    right: 7px;
   }
 }
 @media (max-width: 1199px) {

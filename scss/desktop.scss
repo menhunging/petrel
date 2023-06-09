@@ -2329,3 +2329,23 @@
     width: 100%;
   }
 }
+
+.basket-block{
+  position: relative;
+}
+
+.basket-count{
+  @include border-radius(50%);
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  position: absolute;
+  right: 27px;
+  top: -2px;
+}

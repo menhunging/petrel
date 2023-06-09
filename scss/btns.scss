@@ -179,3 +179,11 @@
     @include transition(all 0.3s);
   }
 }
+
+.btn.addbasket svg {
+  opacity: 0;
+}
+
+.btn.addbasket {
+  background-color: #14306d;
+}
