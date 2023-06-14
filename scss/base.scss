@@ -320,6 +320,15 @@ input {
       text-decoration-color: transparent;
     }
   }
+
+  .desc{
+    font-size: 10px;
+    display: block;
+    font-weight: 300;
+    white-space: normal;
+    max-width: 100%;
+    line-height: 14px;
+  }
 }
 
 .counter {

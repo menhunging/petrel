@@ -546,6 +546,14 @@ input {
 .check-block a:hover {
   text-decoration-color: transparent;
 }
+.check-block .desc {
+  font-size: 10px;
+  display: block;
+  font-weight: 300;
+  white-space: normal;
+  max-width: 100%;
+  line-height: 14px;
+}
 
 .counter {
   position: relative;
@@ -3643,7 +3651,6 @@ div::-webkit-scrollbar-thumb {
 
 .basket {
   padding: 40px 0;
-  overflow: hidden;
 }
 .basket .caption {
   left: -15px;
@@ -3776,6 +3783,9 @@ div::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.basket-details .tabs__body::before {
+  width: 100%;
 }
 .basket-details .tabs__body .btn {
   margin-top: 60px;

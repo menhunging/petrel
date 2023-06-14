@@ -1892,7 +1892,6 @@
 
 .basket {
   padding: 40px 0;
-  overflow: hidden;
 
   .caption {
     left: -15px;
@@ -2049,6 +2048,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    &::before{
+      width: 100%;
+    }
 
     .btn {
       margin-top: 60px;
