@@ -3555,9 +3555,6 @@ div::-webkit-scrollbar-thumb {
   object-fit: cover;
 }
 
-.menu-product {
-  overflow: hidden;
-}
 .menu-product .text-simple {
   padding: 39px 0;
 }
@@ -3571,6 +3568,7 @@ div::-webkit-scrollbar-thumb {
 }
 .menu-product .tabs-wrapper {
   padding: 53px 0;
+  overflow: hidden;
 }
 .menu-product .col {
   font-weight: 400;
@@ -4062,6 +4060,11 @@ div::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #cbc1bc;
   overflow: hidden;
   margin-bottom: 90px;
+  position: sticky;
+  top: 77px;
+  left: 0;
+  background: #fbf9f8;
+  z-index: 7;
 }
 .menu-slider .swiper-button-next, .menu-slider .swiper-button-prev {
   width: 60px;
@@ -4374,7 +4377,7 @@ div::-webkit-scrollbar-thumb {
     right: calc(50% + 430px);
   }
   .reservation {
-    padding: 150px 0 120px;
+    padding: 150px 0 160px;
   }
   .gallery__leftSide .caption {
     font-size: 70px;
@@ -4464,6 +4467,7 @@ div::-webkit-scrollbar-thumb {
   }
   .menu-product .load-more {
     margin-top: 70px;
+    top: 30px;
   }
   .delivery-item__picture {
     left: calc(50% + 70px);
@@ -4487,6 +4491,15 @@ div::-webkit-scrollbar-thumb {
   }
   .basket-count {
     right: 7px;
+  }
+  .menu-slider {
+    top: 97px;
+  }
+  .menu-slider__slider .swiper-slide {
+    min-height: 120px;
+  }
+  .menu-slider__item span {
+    padding: 30px 0;
   }
 }
 @media (max-width: 1199px) {
@@ -5022,7 +5035,7 @@ div::-webkit-scrollbar-thumb {
     margin-top: 40px;
   }
   .reservation {
-    padding: 100px 0 50px;
+    padding: 100px 0 80px;
   }
   .reservation__back--left {
     display: none;
@@ -5847,6 +5860,13 @@ div::-webkit-scrollbar-thumb {
   .menu-slider__slider .swiper-slide {
     font-size: 14px;
     line-height: 20px;
+  }
+  .menu-slider {
+    top: 64px;
+    margin-bottom: 35px;
+  }
+  .menu-product .load-more {
+    top: 0;
   }
 }
 @media (max-width: 639px) {

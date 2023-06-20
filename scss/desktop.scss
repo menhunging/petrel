@@ -1775,8 +1775,6 @@
 }
 
 .menu-product {
-  overflow: hidden;
-
   .text-simple {
     padding: 39px 0;
   }
@@ -1793,6 +1791,7 @@
 
   .tabs-wrapper {
     padding: 53px 0;
+    overflow: hidden;
   }
 
   .col {
@@ -2356,6 +2355,11 @@
   border-bottom: 1px solid #cbc1bc;
   overflow: hidden;
   margin-bottom: 90px;
+  position: sticky;
+  top: 77px;
+  left: 0;
+  background: #fbf9f8;
+  z-index: 7;
 
   %swiper-button-menu {
     width: 60px;
