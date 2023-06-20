@@ -794,6 +794,11 @@
   .menu-slider__slider .swiper-slide {
     font-size: 14px;
     line-height: 20px;
+    min-height: 50px;
+  }
+
+  .menu-slider__item span {
+    padding: 10px 0;
   }
 
   .menu-slider {
@@ -803,5 +808,12 @@
 
   .menu-product .load-more {
     top: 0;
+  }
+
+  .menu-slider {
+    .swiper-button-prev,
+    .swiper-button-next {
+      @include transform(scale(0.7));
+    }
   }
 }
