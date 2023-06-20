@@ -126,11 +126,46 @@ $(document).ready(function () {
       speed: 1200,
       loop: false,
       effect: "fade",
-      autoHeight:true,
+      autoHeight: true,
       fadeEffect: { crossFade: true },
       navigation: {
         nextEl: ".services .swiper-button-next",
         prevEl: ".services .swiper-button-prev",
+      },
+    });
+  }
+
+  if ($(".menu-slider__slider").length > 0) {
+    const swiper = new Swiper(".menu-slider__slider", {
+      slidesPerView: 7,
+      slidesPerGroup: 1,
+      autoHeight: true,
+      navigation: {
+        nextEl: ".menu-slider .swiper-button-next",
+        prevEl: ".menu-slider .swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+        1440: {
+          slidesPerView: 6,
+        },
+        1620: {
+          slidesPerView: 7,
+        },
       },
     });
   }
@@ -207,10 +242,10 @@ $(document).ready(function () {
   }
 
   if ($("select").length > 0) {
-    if ($(window).width() >= 1200){
+    if ($(window).width() >= 1200) {
       $("select").map(function () {
         let inputTime = $(this).parents(".input-item").find(".input-time");
-  
+
         $(this).selectric({
           onOpen: function () {
             inputTime.addClass("visible");
@@ -218,7 +253,7 @@ $(document).ready(function () {
           },
           onChange: function (element) {
             let current = $(element).val();
-  
+
             $(inputTime.find("input")).val(current);
           },
           onClose: function () {
