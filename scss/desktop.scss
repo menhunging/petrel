@@ -2409,6 +2409,17 @@
   }
 }
 
+.menu-page__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .btn {
+    right: 0;
+    top: 0;
+  }
+}
+
 .menu-slider__inner {
   position: relative;
   padding: 0 65px;
@@ -2476,5 +2487,20 @@
         width: 100%;
       }
     }
+  }
+}
+
+.menu-details {
+  display: none;
+  padding: 53px 0;
+}
+
+.menu-details__line {
+  .caption {
+    margin-bottom: 30px;
+  }
+
+  & + .menu-details__line {
+    margin-top: 50px;
   }
 }

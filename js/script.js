@@ -295,4 +295,24 @@ $(document).ready(function () {
       });
     });
   }
+
+  if ($(".js-all-menu").length) {
+    $(".js-all-menu").on("click", function () {
+      let text = "";
+      let menuFull = $(".menu-full");
+      let menuDetails = $(".menu-details");
+
+      if ($(this).hasClass("active")) {
+        text = $(this).attr("data-text");
+        menuFull.show();
+        menuDetails.hide();
+      } else {
+        text = $(this).attr("data-text-active");
+        menuFull.hide();
+        menuDetails.show();
+      }
+
+      $(this).text(text).toggleClass("active");
+    });
+  }
 });

@@ -264,4 +264,10 @@
   .menu-slider__item span {
     padding: 20px 0;
   }
+
+  .menu-page__controls {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 0 30px;
+  }
 }

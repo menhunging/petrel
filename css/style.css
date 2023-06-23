@@ -1395,6 +1395,11 @@ div::-webkit-scrollbar-thumb {
   border-color: #008000;
 }
 
+.btnDefault {
+  padding: 17px 20px !important;
+  text-align: center !important;
+}
+
 .caption {
   position: relative;
   font-family: "Kaisei Decol", serif;
@@ -4118,6 +4123,16 @@ div::-webkit-scrollbar-thumb {
   fill: #665f5b;
 }
 
+.menu-page__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-page__controls .btn {
+  right: 0;
+  top: 0;
+}
+
 .menu-slider__inner {
   position: relative;
   padding: 0 65px;
@@ -4184,6 +4199,18 @@ div::-webkit-scrollbar-thumb {
 }
 .menu-slider__item:hover span::before, .menu-slider__item--active span::before {
   width: 100%;
+}
+
+.menu-details {
+  display: none;
+  padding: 53px 0;
+}
+
+.menu-details__line .caption {
+  margin-bottom: 30px;
+}
+.menu-details__line + .menu-details__line {
+  margin-top: 50px;
 }
 
 @media (max-width: 1899px) {
@@ -4505,6 +4532,11 @@ div::-webkit-scrollbar-thumb {
   }
   .menu-slider__item span {
     padding: 20px 0;
+  }
+  .menu-page__controls {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 0 30px;
   }
 }
 @media (max-width: 1199px) {
