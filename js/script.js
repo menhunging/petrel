@@ -297,7 +297,9 @@ $(document).ready(function () {
   }
 
   if ($(".js-all-menu").length) {
-    $(".js-all-menu").on("click", function () {
+    $(".js-all-menu").on("click", function (e) {
+      e.preventDefault();
+
       let text = "";
       let menuFull = $(".menu-full");
       let menuDetails = $(".menu-details");
